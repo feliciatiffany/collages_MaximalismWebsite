@@ -54,7 +54,7 @@ img{
     /* width: 100%; */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-img:not(.ruler):hover{
+img:not(.scale):hover{
     transform: scale(1.1);
     z-index: 100;
 }
@@ -69,6 +69,29 @@ img:not(.ruler):hover{
 .scale:hover {
   transform: none !important;
 }
+
+#scale {
+  transform: none;
+}
+
+img:not(.ruler):hover{
+    transform: scale(1.1);
+    z-index: 100;
+ 
+}
+
+.ruler {
+    /* z-index: -100; */
+    grid-column:10;
+    grid-row: 1/5;
+    transition: none;
+    
+}
+
+#ruler {
+  transform: none;
+}
+
 
 .title{
     grid-column:4/10 ;
